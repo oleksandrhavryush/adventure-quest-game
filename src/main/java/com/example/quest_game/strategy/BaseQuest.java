@@ -35,10 +35,15 @@ public abstract class BaseQuest implements Quest {
     @Override
     public String processUserAnswer(QuestItem item, String userAnswer) {
         for (DialogOption option : item.getDialogOptions()) {
-            if (option.getOptionText().equals(userAnswer)) {
-                return option.getNextQuestion() == -1 ? item.getNegativeResult() : null;
+            if (option.getOptionText().equalsIgnoreCase(userAnswer)) {
+                if ("Так".equalsIgnoreCase(userAnswer)) {
+                    return item.getPositiveResult();
+                } else if ("Ні".equalsIgnoreCase(userAnswer)) {
+                    return item.getNegativeResult();
+                }
             }
         }
         return null;
     }
+
 }

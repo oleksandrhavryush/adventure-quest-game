@@ -23,7 +23,7 @@ public class Quest_Servlet extends HttpServlet {
     }
 
     public void init() {
-        setQuestStrategy(new PirateQuest());
+
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -33,13 +33,11 @@ public class Quest_Servlet extends HttpServlet {
 
         String questType = request.getParameter("type");
 
-        // Initialize the appropriate quest based on the type parameter
         if ("adventure".equals(questType)) {
             setQuestStrategy(new AdventureQuest());
         } else if ("ufo".equals(questType)) {
             setQuestStrategy(new UfoQuest());
-        } else {
-            // Default to PirateQuest if the type is not recognized
+        } else if ("pirate".equals(questType)) {
             setQuestStrategy(new PirateQuest());
         }
 
