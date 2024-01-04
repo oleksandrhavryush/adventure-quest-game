@@ -6,12 +6,30 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Гра-квест</title>
+
+    <style>
+        .mt-4{
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 60px; /* Доданий відступ між колонками */
+            display: grid;
+        }
+
+        p {
+
+            color: #343a40;
+            font-size: 18px;
+            line-height: 1.5;
+            overflow-wrap: break-word;
+            hyphens: auto; /* дозволяє автоматичний перенос слів */
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h1 class="mt-5">Гра-квест</h1>
     <% QuestItem questItem = (QuestItem) request.getAttribute("questItem"); %>
-    <div class="mt-4">
+    <div class="mt-4 float-left col-lg-7">
         <% if (questItem != null) { %>
         <p><%= questItem.getQuestion() %></p>
         <form action="quest-servlet" method="post">
