@@ -1,10 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Початок квесту</title>
+    <title>Start of the quest</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -43,13 +43,13 @@
 
         @media (min-width: 992px) {
             .container {
-                max-width: 1140px; /* Рекомендований максимальний розмір для .container-lg */
+                max-width: 1140px; /* Recommended maximum size for .container-lg */
             }
         }
 
         @media (min-width: 1200px) {
             .container {
-                max-width: 1320px; /* Рекомендований максимальний розмір для .container-xl */
+                max-width: 1320px; /* Recommended maximum size for .container-xl */
             }
         }
 
@@ -63,7 +63,7 @@
 
             padding-left: 60px;
             padding-right: 60px;
-            margin-bottom: 60px; /* Доданий відступ між колонками */
+            margin-bottom: 60px; /* Added margin between columns */
             display: grid;
         }
 
@@ -73,7 +73,7 @@
             font-size: 18px;
             line-height: 1.5;
             overflow-wrap: break-word;
-            hyphens: auto; /* дозволяє автоматичний перенос слів */
+            hyphens: auto; /* allows automatic word wrap */
         }
 
 
@@ -81,72 +81,73 @@
 </head>
 <body>
 <div class="container">
-    <h1><%= "Ласкаво просимо в захоплюючий світ пригод!" %>
+    <h1><%= "Welcome to the exciting world of adventure!" %>
         <br>
-        <%= "Ти опинився в непередбачуваному місці, де кожен вибір визначає твою долю." %>
+        <%= "You find yourself in an unpredictable place where every choice determines your fate." %>
     </h1>
     <div class="row text-justify">
         <div class="col-md-4">
             <br>
             <br>
             <h4>
-                Загадка НЛО
+                UFO Mystery
             </h4>
             <br>
             <p>
-                Втрачаючи пам'ять, ви знаходитесь в епіцентрі неймовірної пригоди.
-                Перед вами стоїть вибір — прийняти виклик НЛО чи відмовитися. Ваша відповідь визначачить долю героя.
+                Losing memory, you find yourself in the epicenter of an incredible adventure.
+                You are faced with a choice - to accept the UFO challenge or to refuse. Your answer will determine the
+                fate of the hero.
 
             </p>
             <p>
-                Піднявшись на місток, вас чекає питання про вашу ідентичність. Чи розкриєте ви правду?
-                Кожнен вибір веде до виграшу чи програшу, впливаючи на кінцевий результат цього захоплюючого
-                квесту.
+                Climbing onto the bridge, you are faced with a question about your identity. Will you reveal the truth?
+                Each choice leads to victory or defeat, affecting the final result of this exciting
+                quest.
             </p>
             <br/>
-            <a href="quest-servlet?type=ufo">Почати квест</a>
+            <a href="quest-servlet?type=ufo">Start the quest</a>
         </div>
 
         <div class="col-md-4">
             <br>
             <br>
             <h4>
-                Корабельна аварія
+                Shipwreck
             </h4>
             <br>
             <p>
-                Ви — єдиний, хто вижив після корабельної аварії, прокидаєтесь на невідомому острові, де чигає небезпека.
-                Якщо Ви вирішете прийняти виклик, то дізнатися таємницю острова, зустрінете піратського капітана, який
-                може бути союзником або ворогом, знайдете карту скарбів, що веде до багатства і слави.
+                You - the only one who survived after a shipwreck, wake up on an unknown island where danger lurks.
+                If you decide to accept the challenge, then find out the secret of the island, meet a pirate captain who
+                can be an ally or an enemy, find a treasure map that leads to wealth and glory.
 
             </p>
             <p>
-                Ваша доля залежить від вашого вибору. Готові до гри?
+                Your fate depends on your choice. Ready to play?
             </p>
 
             <br/>
-            <a href="quest-servlet?type=pirate">Почати квест</a>
+            <a href="quest-servlet?type=pirate">Start the quest</a>
 
         </div>
         <div class="col-md-4">
             <br>
             <br>
             <h4>
-                Спасіння світу
+                Saving the world
             </h4>
             <br>
             <p>
-                Ти — обраний для розв'язання великої загадки, що загрожує існуванню цього світу.
+                You - chosen to solve a great mystery that threatens the existence of this world.
             </p>
             <p>
-                Тобі належить долати ворогів, вирішувати головоломки та взаємодіяти з чарівними створіннями.
+                You have to overcome enemies, solve puzzles and interact with magical creatures.
             </p>
             <p>
-                Приготуйся до захоплюючого пригодницького квесту, де вибір має значення,
-                а кожен крок призводить до нового виклику. Отже, твоє велике випробування починається...
+                Get ready for an exciting adventure quest where choice matters,
+                and every step leads to a new challenge. So, your great test begins...
             </p>
             <br/>
-            <a href="quest-servlet?type=adventure">Почати квест</a>
+            <a href="quest-servlet?type=adventure">Start the quest</a>
         </div>
     </div>
 </div>

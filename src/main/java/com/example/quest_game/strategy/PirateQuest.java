@@ -15,84 +15,83 @@ public class PirateQuest extends BaseQuest {
     @Override
     public void initializeQuest() {
 
-        DialogOption option1_1 = new DialogOption("Так", 2);
-        DialogOption option1_2 = new DialogOption("Ні", -1);
-        QuestItem item1 = new QuestItem("<p><h6>Початок:</h6> Ви прокидаєтеся на березі острова після корабельної аварії. Ви - єдиний, хто залишився в живих. " +
-                "<br><br><em>Прийняти виклик?</em></p>",
-                Arrays.asList(option1_1, option1_2), null, "<p>Гра закінчена. Ви відмовилися від виклику.</p>");
+        DialogOption option1_1 = new DialogOption("Yes", 2);
+        DialogOption option1_2 = new DialogOption("No", -1);
+        QuestItem item1 = new QuestItem("<p><h6>Start:</h6> You wake up on the shore of an island after a shipwreck. You are the only one who survived. " +
+                "<br><br><em>Accept the challenge?</em></p>",
+                Arrays.asList(option1_1, option1_2), null, "<p>The game is over. You refused the challenge.</p>");
 
-        DialogOption option2_1 = new DialogOption("Так", 3);
-        DialogOption option2_2 = new DialogOption("Ні", 4);
-        QuestItem item2 = new QuestItem("<p><h6>Огляд острова:</h6> Ви дивитеся навколо і бачите, що острів вкритий густим лісом. " +
-                "Ви також помічаєте дим, що піднімається з-за дерев. " +
-                "<br><br><em>Йти до диму?</em></p>",
+        DialogOption option2_1 = new DialogOption("Yes", 3);
+        DialogOption option2_2 = new DialogOption("No", 4);
+        QuestItem item2 = new QuestItem("<p><h6>Island overview:</h6> You look around and see that the island is covered with dense forest. " +
+                "You also notice smoke rising from behind the trees. " +
+                "<br><br><em>Go to the smoke?</em></p>",
                 Arrays.asList(option2_1, option2_2), null, null);
 
-        DialogOption option3_1 = new DialogOption("Так", 5);
-        DialogOption option3_2 = new DialogOption("Ні", -1);
-        QuestItem item3 = new QuestItem("<p><h6>Знайдений піратський капітан:</h6> Ви знаходите пораненого піратського капітана. " +
-                "Він каже, що його корабель затонув через шторм, і він - останній з його команди. Він просить вас допомогти йому. " +
-                "<br><br><em>Допомогти йому?</em></p>",
+        DialogOption option3_1 = new DialogOption("Yes", 5);
+        DialogOption option3_2 = new DialogOption("No", -1);
+        QuestItem item3 = new QuestItem("<p><h6>Found pirate captain:</h6> You find a wounded pirate captain. " +
+                "He says that his ship sank due to a storm, and he is the last of his crew. He asks you to help him. " +
+                "<br><br><em>Help him?</em></p>",
                 Arrays.asList(option3_1, option3_2), null,
-                "<p><h6>Зрада:</h6> Ви відмовляєтеся допомогти піратському капітану і хочете йти геть. Але він не дає вам це зробити. " +
-                        "Він витягає з-під своєї куртки пістолет і стріляє в вас. Гра закінчена.</p>");
+                "<p><h6>Betrayal:</h6> You refuse to help the pirate captain and want to go away. But he doesn't let you do it. " +
+                        "He pulls a gun from under his jacket and shoots you. The game is over.</p>");
 
-        DialogOption option4_1 = new DialogOption("Так", 6);
-        DialogOption option4_2 = new DialogOption("Ні", -1);
-        QuestItem item4 = new QuestItem("<p><h6>Самотній пошук:</h6> Ви відмовляєтеся допомогти піратському капітану і йдете шукати скарби самостійно. " +
-                "Ви знаєте, що на острові повинні бути сховані скарби, адже ви чули про це від свого капітана. " +
-                "<br><br><em>Йти вглиб острова?</em></p>",
-                Arrays.asList(option4_1, option4_2), "<p><h6>Зустріч з диким звіром:</h6> Ви зустрічаєте дикого звіра. Ви не маєте зброї, щоб захистити себе. " +
-                "Ви намагаєтеся втекти, але звір швидше вас. Він нападає на вас і розірве вас на шматки. Гра закінчена.</p>",
-                "<p><h6>Загублені:</h6> Ви загубилися. Ви не можете знайти шлях назад до берега. " +
-                        "Ви блукаєте по острову, але не знаходите нічого, що могло б вам допомогти. Ви вмираєте від голоду і спраги. Гра закінчена.</p>");
+        DialogOption option4_1 = new DialogOption("Yes", 6);
+        DialogOption option4_2 = new DialogOption("No", -1);
+        QuestItem item4 = new QuestItem("<p><h6>Solo search:</h6> You refuse to help the pirate captain and go to search for treasures on your own. " +
+                "You know that there must be hidden treasures on the island, because you heard about it from your captain. " +
+                "<br><br><em>Go deeper into the island?</em></p>",
+                Arrays.asList(option4_1, option4_2), "<p><h6>Meeting with a wild beast:</h6> You meet a wild beast. You have no weapons to protect yourself. " +
+                "You try to run away, but the beast is faster than you. It attacks you and tears you to pieces. The game is over.</p>",
+                "<p><h6>Lost:</h6> You are lost. You can't find your way back to the shore. " +
+                        "You wander around the island, but don't find anything that could help you. You die of hunger and thirst. The game is over.</p>");
 
-        DialogOption option5_1 = new DialogOption("Так", 7);
-        DialogOption option5_2 = new DialogOption("Ні", -1);
-        QuestItem item5 = new QuestItem("<p><h6>Карта скарбів:</h6> Піратський капітан дає вам карту скарбів. " +
-                "Він каже, що він не може йти з вами, але він попросить вас поділитися з ним, якщо ви знайдете щось цінне. Ви обіцяєте йому це. " +
-                "<br><br><em>Йти за маршрутом на карті?</em></p>",
+        DialogOption option5_1 = new DialogOption("Yes", 7);
+        DialogOption option5_2 = new DialogOption("No", -1);
+        QuestItem item5 = new QuestItem("<p><h6>Treasure map:</h6> The pirate captain gives you a treasure map. " +
+                "He says that he can't go with you, but he will ask you to share with him if you find something valuable. You promise him this. " +
+                "<br><br><em>Go by the route on the map?</em></p>",
                 Arrays.asList(option5_1, option5_2), null,
-                "<p><h6>Пастка:</h6> Ви потрапляєте в пастку. Ви крокуєте на приховану дошку, яка активує механізм. " +
-                        "З-під землі вилітають гострі шипи, які пронизують вас. Гра закінчена.</p>");
+                "<p><h6>Trap:</h6> You fall into a trap. You step on a hidden board that activates a mechanism. " +
+                        "Sharp spikes fly out of the ground and pierce you. The game is over.</p>");
 
-        DialogOption option6_1 = new DialogOption("Так", 100);
-        DialogOption option6_2 = new DialogOption("Ні", 8);
-        QuestItem item6 = new QuestItem("<p><h6>Знайдена печера:</h6> Ви йдете вглиб острова і знаходите велику печеру. " +
-                "Ви чуєте дивні звуки зсередини. Ви думаєте, що там може бути щось цікаве. " +
-                "<br><br><em>Зайти в печеру?</em></p>",
-                Arrays.asList(option6_1, option6_2), "<p><h6>Катастрофа:</h6> Ви заходите в печеру і виявляєте, що вона повна лави і вулканічної активності. " +
-                "Ви не встигаєте вийти назад, як печера починає обвалюватися. Ви опиняєтеся під завалами і не можете дихати. Гра закінчена.</p>",
+        DialogOption option6_1 = new DialogOption("Yes", 100);
+        DialogOption option6_2 = new DialogOption("No", 8);
+        QuestItem item6 = new QuestItem("<p><h6>Found a cave:</h6> You go deeper into the island and find a large cave. " +
+                "You hear strange sounds from inside. You think there might be something interesting there. " +
+                "<br><br><em>Enter the cave?</em></p>",
+                Arrays.asList(option6_1, option6_2), "<p><h6>Disaster:</h6> You enter the cave and find that it is full of lava and volcanic activity. " +
+                "You don't have time to get back out as the cave starts to collapse. You end up under the rubble and can't breathe. The game is over.</p>",
                 null);
 
-        DialogOption option7_1 = new DialogOption("Так", 100);
-        DialogOption option7_2 = new DialogOption("Ні", 6);
-        QuestItem item7 = new QuestItem("<p><h6>Зустріч з туземцями:</h6> Ви йдете за маршрутом на карті і знаходите поселення туземців. " +
-                "Ви бачите, що вони живуть у примітивних умовах, але виглядають дружелюбно. " +
-                "<br><br><em>Спілкуватися з туземцями?</em></p>",
-                Arrays.asList(option7_1, option7_2), "<p><h6>Дружба:</h6> Ви спілкуєтеся з туземцями і виявляєте, що вони знають про скарби. " +
-                "Вони кажуть, що вони охороняють їх від злих людей, які хочуть їх викрасти. Вони пропонують вам допомогти їм у цьому. " +
-                "Ви погоджуєтеся і отримуєте їх довіру. Вони показують вам схованку скарбів і дозволяють вам взяти частину з них. Перемога!</p>",
+        DialogOption option7_1 = new DialogOption("Yes", 100);
+        DialogOption option7_2 = new DialogOption("No", 6);
+        QuestItem item7 = new QuestItem("<p><h6>Meeting with the natives:</h6> You go by the route on the map and find a settlement of natives. " +
+                "You see that they live in primitive conditions, but look friendly. " +
+                "<br><br><em>Communicate with the natives?</em></p>",
+                Arrays.asList(option7_1, option7_2), "<p><h6>Friendship:</h6> You communicate with the natives and find out that they know about the treasures. " +
+                "They say that they are protecting them from evil people who want to steal them. They offer you to help them in this. " +
+                "You agree and gain their trust. They show you the treasure hideout and allow you to take part of them. Victory!</p>",
                 null);
 
-        DialogOption option8_1 = new DialogOption("Так", 9);
-        DialogOption option8_2 = new DialogOption("Ні", -1);
-        QuestItem item8 = new QuestItem("<p><h6>Знайдений вхід в підземелля:</h6> Ви йдете далі і знаходите вхід в підземелля. " +
-                "Ви бачите, що на вході є напис: <br><br><em>\"Тільки сміливі можуть увійти. Тільки розумні можуть вийти\".</em><br> Ви думаєте, що там може бути щось цінне. " +
-                "<br><br><em>Увійти в підземелля?</em></p>",
+        DialogOption option8_1 = new DialogOption("Yes", 9);
+        DialogOption option8_2 = new DialogOption("No", -1);
+        QuestItem item8 = new QuestItem("<p><h6>Found entrance to the dungeon:</h6> You go further and find an entrance to the dungeon. " +
+                "You see that there is an inscription at the entrance: <br><br><em>\"Only the brave can enter. Only the wise can leave\".</em><br> You think there might be something valuable there. " +
+                "<br><br><em>Enter the dungeon?</em></p>",
                 Arrays.asList(option8_1, option8_2), null,
-                "<p><h6>Смертельні пастки:</h6> Під час вашого подальшого шляху піратський капітан вирушає за вами і нападає вас. Ви боретеся з ним, але він вас перемагає.</p>");
+                "<p><h6>Deadly traps:</h6> During your further journey, the pirate captain follows you and attacks you. You fight him, but he defeats you.</p>");
 
-        DialogOption option9_1 = new DialogOption("Так", 100);
-        DialogOption option9_2 = new DialogOption("Ні", -1);
-        QuestItem item9 = new QuestItem("<p><h6>Знайдена старовинна статуя:</h6> Ви увійшли в підземелля та йдете за маршрутом на карті і знаходите старовинну статую. " +
-                "Ви бачите, що вона має в руках ключ. Ви думаєте, що він може відкрити щось важливе. " +
-                "<br><br><em>Взяти ключ?</em></p>",
-                Arrays.asList(option9_1, option9_2), "<p><h6>Фінал:</h6> Ви взяли ключ і використали його, щоб відкрити таємний вхід в піраміду. " +
-                "Ви входите в піраміду і знаходите головну скриню з скарбами. Ви бачите, що вона наповнена золотом, коштовностями і рідкісними артефактами. " +
-                "Ви відчуваєте радість і задоволення. Перемога!</p>",
-                "<p><h6>Фінал:</h6> Коли ви входите в піраміду, ви чуєте, як за вами зачиняється двері. Ви опиняєтеся у пастці. Ви не можете вийти з піраміди. Гра закінчена.</p>");
-
+        DialogOption option9_1 = new DialogOption("Yes", 100);
+        DialogOption option9_2 = new DialogOption("No", -1);
+        QuestItem item9 = new QuestItem("<p><h6>Found ancient statue:</h6> You entered the dungeon and go by the route on the map and find an ancient statue. " +
+                "You see that it holds a key in its hands. You think it can open something important. " +
+                "<br><br><em>Take the key?</em></p>",
+                Arrays.asList(option9_1, option9_2), "<p><h6>Final:</h6> You took the key and used it to open a secret entrance to the pyramid. " +
+                "You enter the pyramid and find the main treasure chest. You see that it is filled with gold, jewels and rare artifacts. " +
+                "You feel joy and satisfaction. Victory!</p>",
+                "<p><h6>Final:</h6> When you enter the pyramid, you hear the door close behind you. You are trapped. You can't get out of the pyramid. The game is over.</p>");
 
         questMap.put(1, item1);
         questMap.put(2, item2);

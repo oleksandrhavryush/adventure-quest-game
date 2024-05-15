@@ -36,9 +36,9 @@ public abstract class BaseQuest implements Quest {
     public String processUserAnswer(QuestItem item, String userAnswer) {
         for (DialogOption option : item.getDialogOptions()) {
             if (option.getOptionText().equalsIgnoreCase(userAnswer)) {
-                if ("Так".equalsIgnoreCase(userAnswer)) {
+                if ("Yes".equalsIgnoreCase(userAnswer)) {
                     return item.getPositiveResult();
-                } else if ("Ні".equalsIgnoreCase(userAnswer)) {
+                } else if ("No".equalsIgnoreCase(userAnswer)) {
                     return item.getNegativeResult();
                 }
             }

@@ -13,17 +13,17 @@ import java.util.Arrays;
 public class UfoQuest extends BaseQuest {
     @Override
     public void initializeQuest() {
-        DialogOption option1_1 = new DialogOption("Так", 2);
-        DialogOption option1_2 = new DialogOption("Ні", -1);
-        QuestItem item1 = new QuestItem("Ви втрачаєте пам'ять. Прийняти виклик НЛО?", Arrays.asList(option1_1, option1_2), null, "Програш");
+        DialogOption option1_1 = new DialogOption("Yes", 2);
+        DialogOption option1_2 = new DialogOption("No", -1);
+        QuestItem item1 = new QuestItem("You lose your memory. Accept the UFO challenge?", Arrays.asList(option1_1, option1_2), null, "Loss");
 
-        DialogOption option2_1 = new DialogOption("Так", 3);
-        DialogOption option2_2 = new DialogOption("Ні", -1);
-        QuestItem item2 = new QuestItem("Ви прийняли виклик. Піднятися на капітанський місток?", Arrays.asList(option2_1, option2_2), null, "Програш");
+        DialogOption option2_1 = new DialogOption("Yes", 3);
+        DialogOption option2_2 = new DialogOption("No", -1);
+        QuestItem item2 = new QuestItem("You accepted the challenge. Climb to the captain's bridge?", Arrays.asList(option2_1, option2_2), null, "Loss");
 
-        DialogOption option3_1 = new DialogOption("Так", -1);
-        DialogOption option3_2 = new DialogOption("Ні", -1);
-        QuestItem item3 = new QuestItem("Ви піднялись на місток. Хто ви? Розкажете правду?", Arrays.asList(option3_1, option3_2), "Виграш", "Програш");
+        DialogOption option3_1 = new DialogOption("Yes", -1);
+        DialogOption option3_2 = new DialogOption("No", -1);
+        QuestItem item3 = new QuestItem("You climbed the bridge. Who are you? Tell the truth?", Arrays.asList(option3_1, option3_2), "Win", "Loss");
 
         questMap.put(1, item1);
         questMap.put(2, item2);

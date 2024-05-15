@@ -12,70 +12,70 @@ import java.util.Arrays;
 
 public class AdventureQuest extends BaseQuest {
 
-      @Override
+    @Override
     public void initializeQuest() {
 
-        DialogOption option1_1 = new DialogOption("Так", 2);
-        DialogOption option1_2 = new DialogOption("Ні", -1);
-          QuestItem item1 = new QuestItem("<p><h6>Початок:</h6> Ви отримали листа від вченого, який розповідає, що з'явилася загроза з іншого виміру і світ потребує вашої допомоги. " +
-                  "<br><br><em>Погоджуєтеся вирушити в подорож?</em></p>",
-                  Arrays.asList(option1_1, option1_2), null, "<p>Гра закінчена. Ви відмовилися від виклику.</p>");
+        DialogOption option1_1 = new DialogOption("Yes", 2);
+        DialogOption option1_2 = new DialogOption("No", -1);
+        QuestItem item1 = new QuestItem("<p><h6>Start:</h6> You received a letter from a scientist who tells you that a threat from another dimension has appeared and the world needs your help. " +
+                "<br><br><em>Do you agree to go on a journey?</em></p>",
+                Arrays.asList(option1_1, option1_2), null, "<p>The game is over. You refused the challenge.</p>");
 
-          DialogOption option2_1 = new DialogOption("Так", 3);
-        DialogOption option2_2 = new DialogOption("Ні", -1);
-        QuestItem item2 = new QuestItem("<p><h6>Відкриття порталу:</h6> Вчений розповідає, що є ворота між вимірами, і вам потрібно відкрити їх, щоб потрапити в інший світ. " +
-                "<br><br><em>Згодні вирушити на пошук воріт?</em></p>",
-                Arrays.asList(option2_1, option2_2), null, "<p>Гра закінчена. Ви не ризикнули.</p>");
+        DialogOption option2_1 = new DialogOption("Yes", 3);
+        DialogOption option2_2 = new DialogOption("No", -1);
+        QuestItem item2 = new QuestItem("<p><h6>Opening the portal:</h6> The scientist tells you that there are gates between dimensions, and you need to open them to get to another world. " +
+                "<br><br><em>Do you agree to go in search of the gates?</em></p>",
+                Arrays.asList(option2_1, option2_2), null, "<p>The game is over. You didn't take the risk.</p>");
 
-        DialogOption option3_1 = new DialogOption("Так", 4);
-        DialogOption option3_2 = new DialogOption("Ні", -1);
-        QuestItem item3 = new QuestItem("<p><h6>Зустріч із магістром:</h6> Під час вашого дослідження ви знаходите магістра, який володіє знанням про ворота. " +
-                "Він просить вас допомогти йому збирати потрібні ресурси. " +
-                "<br><br><em>Погоджуєтеся вам допомогти?</em></p>",
-                Arrays.asList(option3_1, option3_2), null, "<p><h6>Зрада:</h6> Ви відмовляєтеся допомогти магістру, і він виявляється вашим ворогом. " +
-                "Він намагається закрити вас в іншому вимірі. Гра закінчена.</p>");
+        DialogOption option3_1 = new DialogOption("Yes", 4);
+        DialogOption option3_2 = new DialogOption("No", -1);
+        QuestItem item3 = new QuestItem("<p><h6>Meeting with the master:</h6> During your research, you find a master who has knowledge of the gates. " +
+                "He asks you to help him collect the necessary resources. " +
+                "<br><br><em>Do you agree to help him?</em></p>",
+                Arrays.asList(option3_1, option3_2), null, "<p><h6>Betrayal:</h6> You refuse to help the master, and he turns out to be your enemy. " +
+                "He tries to lock you in another dimension. The game is over.</p>");
 
-        DialogOption option4_1 = new DialogOption("Так", 5);
-        DialogOption option4_2 = new DialogOption("Ні", -1);
-        QuestItem item4 = new QuestItem("<p><h6>Пошук ресурсів:</h6> Ви згоджуєтеся допомогти магістру і вирушаєте в пошук необхідних ресурсів. Знаходите загадковий артефакт. " +
-                "<br><br><em>Взяти його з собою?</em></p>",
-                Arrays.asList(option4_1, option4_2), null, "<p><h6>Загублені:</h6> Ви загубилися в іншому вимірі. " +
-                "Вас оточують непривітні істоти, і ви не можете знайти шлях назад. Ви гинете від атак істот. Гра закінчена.</p>");
+        DialogOption option4_1 = new DialogOption("Yes", 5);
+        DialogOption option4_2 = new DialogOption("No", -1);
+        QuestItem item4 = new QuestItem("<p><h6>Resource search:</h6> You agree to help the master and go in search of the necessary resources. Find a mysterious artifact. " +
+                "<br><br><em>Take it with you?</em></p>",
+                Arrays.asList(option4_1, option4_2), null, "<p><h6>Lost:</h6> You get lost in another dimension. " +
+                "You are surrounded by unfriendly creatures, and you can't find your way back. You die from creature attacks. The game is over.</p>");
 
-        DialogOption option5_1 = new DialogOption("Так", 6);
-        DialogOption option5_2 = new DialogOption("Ні", -1);
-        QuestItem item5 = new QuestItem("<p><h6>Відкриття воріт:</h6> Ви знаходите всі необхідні ресурси та повертаєтеся до магістра. Разом ви відкриваєте ворота в інший вимір. " +
-                "<br><br><em>Готові вирушити?</em></p>",
+        DialogOption option5_1 = new DialogOption("Yes", 6);
+        DialogOption option5_2 = new DialogOption("No", -1);
+        QuestItem item5 = new QuestItem("<p><h6>Opening the gates:</h6> You find all the necessary resources and return to the master. Together you open the gates to another dimension. " +
+                "<br><br><em>Ready to go?</em></p>",
                 Arrays.asList(option5_1, option5_2), null,
-                "<p><h6>Пастка:</h6> Ви потрапляєте в пастку, яку влаштував магістр. Він виявляється вашим ворогом і залишає вас в іншому вимірі. Гра закінчена.</p>");
+                "<p><h6>Trap:</h6> You fall into a trap set up by the master. He turns out to be your enemy and leaves you in another dimension. The game is over.</p>");
 
-        DialogOption option6_1 = new DialogOption("Так", 100);
-        DialogOption option6_2 = new DialogOption("Ні", 8);
-        QuestItem item6 = new QuestItem("<p><h6>Інший світ:</h6> Ви входите в ворота і опиняєтеся в іншому вимірі. Знаходите, що цей світ під загрозою теж. " +
-                "<br><br><em>Готові вирушити в рятівну подорож?</em></p>",
-                Arrays.asList(option6_1, option6_2), "<p><h6>Конфронтация:</h6> Зустрічаєте владаря іншого виміру, який виявляється ворогом. " +
-                "Ви повинні зібрати союзників та зброю, щоб перемогти його.</p>", null);
+        DialogOption option6_1 = new DialogOption("Yes", 100);
+        DialogOption option6_2 = new DialogOption("No", 8);
+        QuestItem item6 = new QuestItem("<p><h6>Another world:</h6> You enter the gates and find yourself in another dimension. Find that this world is also under threat. " +
+                "<br><br><em>Ready to go on a rescue journey?</em></p>",
+                Arrays.asList(option6_1, option6_2), "<p><h6>Confrontation:</h6> You meet the ruler of another dimension, who turns out to be an enemy. " +
+                "You must gather allies and weapons to defeat him.</p>", null);
 
-        DialogOption option7_1 = new DialogOption("Так", 100);
-        DialogOption option7_2 = new DialogOption("Ні", 6);
-        QuestItem item7 = new QuestItem("<p><h6>Знайдені союзники:</h6> Ви знаходите істоти, які готові допомогти вам у боротьбі проти ворога. " +
-                "<br><br><em>Готові вирушити разом з ними?</em></p>",
-                Arrays.asList(option7_1, option7_2), "<p><h6>Битва:</h6> Разом із союзниками ви розпочинаєте велику битву з ворогом. " +
-                "Вона триває довго, але ви перемагаєте. Перемога!</p>", null);
+        DialogOption option7_1 = new DialogOption("Yes", 100);
+        DialogOption option7_2 = new DialogOption("No", 6);
+        QuestItem item7 = new QuestItem("<p><h6>Found allies:</h6> You find creatures who are ready to help you in the fight against the enemy. " +
+                "<br><br><em>Ready to go with them?</em></p>",
+                Arrays.asList(option7_1, option7_2), "<p><h6>Battle:</h6> Together with allies, you start a great battle with the enemy. " +
+                "It lasts a long time, but you win. Victory!</p>", null);
 
-        DialogOption option8_1 = new DialogOption("Так", 9);
-        DialogOption option8_2 = new DialogOption("Ні", -1);
-        QuestItem item8 = new QuestItem("<p><h6>Знайдена зброя:</h6> Ви відмовляєтеся від союзників і йдете шукати потужну зброю, яка може допомогти вам у битві. Знайшли ви магічний меч. " +
-                "<br><br><em>Взяти його з собою?</em></p>",
+        DialogOption option8_1 = new DialogOption("Yes", 9);
+        DialogOption option8_2 = new DialogOption("No", -1);
+        QuestItem item8 = new QuestItem("<p><h6>Found weapon:</h6> You refuse from allies and go to look for a powerful weapon that can help you in the battle. You find a magical sword. " +
+                "<br><br><em>Take it with you?</em></p>",
                 Arrays.asList(option8_1, option8_2), null,
-                "<p><h6>Смертельна помилка:</h6> Магічний меч обертається проти вас і атакує. Ви не в змозі витримати його силу. Гра закінчена.</p>");
+                "<p><h6>Deadly mistake:</h6> The magical sword turns against you and attacks. You are not able to withstand its power. The game is over.</p>");
 
-        DialogOption option9_1 = new DialogOption("Так", 100);
-        DialogOption option9_2 = new DialogOption("Ні", -1);
-        QuestItem item9 = new QuestItem("<p><h6>Боротьба з ворогом:</h6> Ви знаходите ворога та розпочинаєте боротьбу. З магічним мечем ви здатні йому протистояти. " +
-                "<br><br><em>Почати боротьбу?</em></p>",
-                Arrays.asList(option9_1, option9_2), "<p><h6>Фінал:</h6> Ви повертаєтеся в свій вимір і відчуваєте себе героєм. Світ збережено. Перемога!</p>",
-                "<p><h6>Фінал:</h6> Ви не змогли перемогти ворога і опиняєтеся в іншому вимірі назавжди. Гра закінчена.</p>");
+        DialogOption option9_1 = new DialogOption("Yes", 100);
+        DialogOption option9_2 = new DialogOption("No", -1);
+        QuestItem item9 = new QuestItem("<p><h6>Fight with the enemy:</h6> You find the enemy and start the fight. With a magical sword, you can resist him. " +
+                "<br><br><em>Start the fight?</em></p>",
+                Arrays.asList(option9_1, option9_2), "<p><h6>Final:</h6> You return to your dimension and feel like a hero. The world is saved. Victory!</p>",
+                "<p><h6>Final:</h6> You could not defeat the enemy and end up in another dimension forever. The game is over.</p>");
 
         questMap.put(1, item1);
         questMap.put(2, item2);
