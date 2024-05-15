@@ -1,62 +1,29 @@
-<!-- Adventure Quest Game -->
+# Adventure Quest Game: An Interactive Text-Based Game
 
-<h1>Welcome to the Adventure Quest Game repository! 🚀</h1>
-<p>This Java web application allows users to embark on exciting adventures, making choices that determine their fate. Whether facing interdimensional threats, navigating pirate islands, or encountering UFO mysteries, each decision leads to unique outcomes.</p>
+Welcome to the Adventure Quest Game! This interactive text-based game, built with Java, Servlets, JSP, and JSTL, takes you on thrilling adventures where your choices shape your destiny.
 
-<h2>Table of Contents</h2>
-<ul>
-  <li><a href="#getting-started">Getting Started</a></li>
-  <li><a href="#features">Features</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#license">License</a></li>
-</ul>
+## Key Features
+- **Adventure Types**: Embark on different types of adventures, including interdimensional threats, pirate islands, and UFO mysteries.
+- **Dynamic Quests**: Experience unique outcomes in each playthrough, thanks to the dynamic quest system that changes based on your choices.
+- **Result Page**: Witness the consequences of your adventure, be it a glorious victory or an unfortunate defeat.
 
-<h2 id="getting-started">Getting Started</h2>
+## Installation
+1. Clone the repository: `git clone https://github.com/oleksandrhavryush/Quest_game`
+2. Open the project in your preferred IDE.
+3. Set up a Tomcat server and configure it for the project.
+4. Build and deploy the project.
 
-<h3>Prerequisites</h3>
-<p>Make sure you have the following installed:</p>
-<ul>
-  <li>Java Development Kit (JDK)</li>
-  <li>Apache Tomcat</li>
-  <li>Maven</li>
-</ul>
+## Usage
+1. Access the game at `http://localhost:{your_port}/quest-servlet`.
+2. Select an adventure type to begin your quest.
+3. Make choices at each step of the adventure.
+4. Reach the final result page to see the outcome of your adventure.
 
-<h3>Installation</h3>
-<ol>
-  <li>Clone the repository:
-    <pre><code>git clone https://github.com/oleksandrhavryush/Quest_game</code></pre>
-  </li>
-  <li>Open the project in your preferred IDE.</li>
-  <li>Set up a Tomcat server and configure it for the project.</li>
-  <li>Build and deploy the project.</li>
-</ol>
+## Contributing
+Contributions are welcome! If you'd like to contribute, please:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make changes and test them thoroughly.
+4. Submit a pull request, explaining the changes you made.
 
-<h2 id="features">Features</h2>
-<ul>
-  <li><strong>Adventure Types:</strong> Choose from different adventure types, including Adventure, Pirate, and UFO quests.</li>
-  <li><strong>Dynamic Quests:</strong> The quests dynamically unfold based on user choices, providing a unique experience each time.</li>
-  <li><strong>Result Page:</strong> View the result of your adventure, whether it's a glorious victory or an unfortunate defeat.</li>
-</ul>
-
-<h2 id="usage">Usage</h2>
-<ol>
-  <li>Access the game by visiting the following URL: <code>http://localhost:{your_port}/quest-servlet</code>.</li>
-  <li>Select an adventure type (Adventure, Pirate, UFO) to begin your quest.</li>
-  <li>Make choices at each step, shaping the outcome of your adventure.</li>
-  <li>Reach the final result page to see how your decisions influenced the game.</li>
-</ol>
-
-<h2 id="contributing">Contributing</h2>
-<p>Contributions are welcome! If you'd like to contribute to the project, please follow these steps:</p>
-<ol>
-  <li>Fork the repository.</li>
-  <li>Create a new branch for your feature or bug fix.</li>
-  <li>Make changes and test them thoroughly.</li>
-  <li>Submit a pull request, explaining the changes you made.</li>
-</ol>
-
-<h2 id="license">License</h2>
-<p>This project is licensed under the MIT License. Feel free to use and modify the code according to the license terms.</p>
-
-<p>Enjoy your adventures in the quest game! 🚀</p>
+Embark on your adventure in the Adventure Quest Game today! 🚀
