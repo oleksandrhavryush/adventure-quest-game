@@ -20,7 +20,7 @@ The project offers several key features:
 
 ### Installation
 
-1. **Clone the Project Repository:** Clone the repository to your local machine using `git clone https://github.com/your-github-username/adventure-quest-game`.
+1. **Clone the Project Repository:** Clone the repository to your local machine.
 2. **Open the Project:** Open the project in your preferred IDE (e.g., IntelliJ IDEA).
 3. **Configure Tomcat:** Download and install Apache Tomcat 9. In your IDE, set up a new Tomcat server pointing to the installed location and configure the project to run on this server.
 4. **Build and Run the Project:** Build the project (usually by clicking `Build -> Build Project` in your IDE menu). Start the Tomcat server and deploy the project to it.
