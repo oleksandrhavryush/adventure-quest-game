@@ -1,29 +1,37 @@
 # Adventure Quest Game: An Interactive Text-Based Game
 
-Welcome to the Adventure Quest Game! This interactive text-based game, built with Java, Servlets, JSP, and JSTL, takes you on thrilling adventures where your choices shape your destiny.
+Embark on thrilling adventures with the Adventure Quest Game! This interactive text-based game is developed using Java, Servlets, JSP, and JSTL. It provides a dynamic gaming experience where your choices shape your destiny.
 
-## Key Features
-- **Adventure Types**: Embark on different types of adventures, including interdimensional threats, pirate islands, and UFO mysteries.
-- **Dynamic Quests**: Experience unique outcomes in each playthrough, thanks to the dynamic quest system that changes based on your choices.
-- **Result Page**: Witness the consequences of your adventure, be it a glorious victory or an unfortunate defeat.
+## Project Overview
 
-## Installation
-1. Clone the repository: `git clone https://github.com/oleksandrhavryush/Quest_game`
-2. Open the project in your preferred IDE.
-3. Set up a Tomcat server and configure it for the project.
-4. Build and deploy the project.
+The project offers several key features:
+
+- **Adventure Types:** Embark on various types of adventures, including interdimensional threats, pirate islands, and UFO mysteries.
+- **Dynamic Quests:** Experience unique outcomes in each playthrough, thanks to the dynamic quest system that changes based on your choices.
+- **Result Page:** Witness the consequences of your adventure, be it a glorious victory or an unfortunate defeat.
+
+## Setup and Configuration
+
+### Prerequisites
+
+- Java 1.8 or later
+- Apache Tomcat 9
+- A modern web browser
+
+### Installation
+
+1. **Clone the Project Repository:** Clone the repository to your local machine using `git clone https://github.com/your-github-username/adventure-quest-game`.
+2. **Open the Project:** Open the project in your preferred IDE (e.g., IntelliJ IDEA).
+3. **Configure Tomcat:** Download and install Apache Tomcat 9. In your IDE, set up a new Tomcat server pointing to the installed location and configure the project to run on this server.
+4. **Build and Run the Project:** Build the project (usually by clicking `Build -> Build Project` in your IDE menu). Start the Tomcat server and deploy the project to it.
 
 ## Usage
-1. Access the game at `http://localhost:{your_port}/quest-servlet`.
-2. Select an adventure type to begin your quest.
-3. Make choices at each step of the adventure.
-4. Reach the final result page to see the outcome of your adventure.
 
-## Contributing
-Contributions are welcome! If you'd like to contribute, please:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make changes and test them thoroughly.
-4. Submit a pull request, explaining the changes you made.
+1. **Access the Game:** Open a web browser and navigate to `http://localhost:8080` to access the Adventure Quest Game.
+2. **Select an Adventure Type:** Begin your quest by selecting an adventure type.
+3. **Make Choices:** Make choices at each step of the adventure to shape your journey.
+4. **View the Result:** Reach the final result page to see the outcome of your adventure.
 
-Embark on your adventure in the Adventure Quest Game today! 🚀
+## Conclusion
+
+The Adventure Quest Game showcases proficiency in Java, Servlets, JSP, and JSTL, offering a dynamic and interactive text-based game experience. Its user-friendly interface and robust functionality make it a valuable addition to any developer's portfolio.
